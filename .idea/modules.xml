@@ -7,7 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/Eureka-server/Eureka-server.iml" filepath="$PROJECT_DIR$/Eureka-server/Eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/Notification/Notification.iml" filepath="$PROJECT_DIR$/Notification/Notification.iml" />
       <module fileurl="file://$PROJECT_DIR$/Question-Anwser/Question-Anwser.iml" filepath="$PROJECT_DIR$/Question-Anwser/Question-Anwser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi-module-parent/analytics/analytics.iml" filepath="$PROJECT_DIR$/multi-module-parent/analytics/analytics.iml" />
       <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi-module-parent/multi-module-parent.iml" filepath="$PROJECT_DIR$/multi-module-parent/multi-module-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi-module-parent/question-answer/question-answer.iml" filepath="$PROJECT_DIR$/multi-module-parent/question-answer/question-answer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/stage project.iml" filepath="$PROJECT_DIR$/.idea/stage project.iml" />
     </modules>
   </component>

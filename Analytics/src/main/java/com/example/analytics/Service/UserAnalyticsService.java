@@ -4,9 +4,10 @@ import com.example.analytics.Model.UserAnalytics;
 import com.example.analytics.Repository.UserAnalyticsRepository;
 import com.example.analytics.dto.UserAnalyticsSummary;
 import com.example.analytics.dto.UserCredentialsDTO;
-import dto.UserResponse;
+
+
+import com.example.analytics.dto.UserResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

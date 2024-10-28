@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/Question-Anwser/pom.xml" />
         <option value="$PROJECT_DIR$/Analytics/pom.xml" />
         <option value="$PROJECT_DIR$/Notification/pom.xml" />
+        <option value="$PROJECT_DIR$/multi-module-parent/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

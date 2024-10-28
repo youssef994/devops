@@ -7,19 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-gateway" />
+        <module name="analytics" />
         <module name="Question-Anwser" />
+        <module name="question-answer" />
+        <module name="api-gateway" />
         <module name="Eureka-server" />
         <module name="Analytics" />
         <module name="Notification" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="analytics" target="1.5" />
       <module name="Analytics" target="17" />
       <module name="api-gateway" target="17" />
       <module name="Authentication" target="17" />
       <module name="Eureka-server" target="17" />
+      <module name="multi-module-parent" target="1.5" />
       <module name="Notification" target="17" />
+      <module name="question-answer" target="1.8" />
       <module name="Question-Anwser" target="17" />
       <module name="Zuul" target="17" />
       <module name="Zuul-gateway" target="17" />

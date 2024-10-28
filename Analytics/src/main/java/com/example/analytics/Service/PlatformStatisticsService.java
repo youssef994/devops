@@ -2,13 +2,14 @@ package com.example.analytics.Service;
 
 import com.example.analytics.Model.PlatformStatistics;
 import com.example.analytics.Repository.PlatformStatisticsRepository;
-import com.example.questionanwser.Service.AuthenticationService;
 import jakarta.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -21,7 +22,8 @@ import java.util.Map;
 public class PlatformStatisticsService {
 
     @Autowired
-    private AuthenticationService authenticationService;
+    @Qualifier("analyticsRestTemplate")
+    private RestTemplate restTemplate;
 
     @Autowired
     private PlatformStatisticsRepository platformStatisticsRepository;
@@ -33,10 +35,11 @@ public class PlatformStatisticsService {
     public void updatePlatformStatistics() {
         logger.info("Scheduled task started to update platform statistics.");
 
-        long totalUsers = authenticationService.countTotalUsers();
-        long activeUsers = authenticationService.countActiveUsers();
-        long newUsersToday = authenticationService.countNewUsersToday();
-        long newUsersThisMonth = authenticationService.countNewUsersThisMonth();
+        long totalUsers = restTemplate.getForObject("http://localhost:8080/api/auth/countTotalUsers", Long.class);
+        long activeUsers = restTemplate.getForObject("http://localhost:8080/api/auth/countActiveUsers", Long.class);
+        long newUsersToday = restTemplate.getForObject("http://localhost:8080/api/auth/countNewUsersToday", Long.class);
+        long newUsersThisMonth = restTemplate.getForObject("http://localhost:8080/api/auth/countNewUsersThisMonth", Long.class);
+
 
         // Determine the current day
         LocalDate today = LocalDate.now();

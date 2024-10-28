@@ -180,4 +180,24 @@ public class AuthController {
     public List<UserCredentials> searchByUsername(@RequestParam("username") String username) {
         return authService.findByUsernameContainingIgnoreCase(username);
     }
+
+    @GetMapping("/countTotalUsers")
+    public long countTotalUsers() {
+        return authService.countTotalUsers();
+    }
+
+    @GetMapping("/countActiveUsers")
+    public long countActiveUsers() {
+        return authService.countActiveUsers();
+    }
+
+    @GetMapping("/countNewUsersToday")
+    public long countNewUsersToday() {
+        return authService.countNewUsersToday();
+    }
+
+    @GetMapping("/countNewUsersThisMonth")
+    public long countNewUsersThisMonth() {
+        return authService.countNewUsersThisMonth();
+    }
 }

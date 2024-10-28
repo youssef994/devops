@@ -6,6 +6,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class AppConfig2 {
+    @Bean
     public RestTemplate analyticsRestTemplate() {
         return new RestTemplate();
     }

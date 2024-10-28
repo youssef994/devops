@@ -1,6 +1,7 @@
 package com.example.analytics.Service;
 
-import dto.UserStatisticsDTO;
+
+import com.example.analytics.dto.UserStatisticsDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
