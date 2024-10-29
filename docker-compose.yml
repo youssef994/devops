@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
   eureka-server:
-    image: eureka-server-image
+    image: youssefbenslama/eureka-server:latest
     networks:
       - eureka-network
     container_name: eureka-server
@@ -15,7 +13,7 @@ services:
       - "8761:8761"
 
   api-gateway:
-    image: api-gateway-image
+    image: youssefbenslama/api-gateway:latest
     networks:
       - eureka-network
     container_name: api-gateway
@@ -27,21 +25,20 @@ services:
       - eureka-server
 
   question-anwser:
-    image: question-anwser-image:latest
+    image: youssefbenslama/question-anwser:latest
     networks:
       - eureka-network
     container_name: question-anwser
     environment:
       - SPRING_PROFILES_ACTIVE=default
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
-
     ports:
       - "8088:8088"
     depends_on:
       - eureka-server
 
   notification:
-    image:  notification-image
+    image: youssefbenslama/notification:latest
     networks:
       - eureka-network
     container_name: notification-service
@@ -52,8 +49,9 @@ services:
       - "8085:8085"
     depends_on:
       - eureka-server
+
   analytics:
-    image: analytics-image
+    image: youssefbenslama/analytics:latest
     networks:
       - eureka-network
     container_name: analytics-service
