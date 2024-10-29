@@ -2,13 +2,13 @@
 Q
 java:S1066c"/Merge this if statement with the enclosing one.(¥¹—«úÿÿÿÿ8ä¿Ğø«2
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÚÃ˜Æúÿÿÿÿ8é¿Ğø«2
-l
-java:S2259("JA "NullPointerException" could be thrown; "getForObject" is nullable here.(¢”¦Ûøÿÿÿÿ8é¡Ñø«2
-l
-java:S2259)"JA "NullPointerException" could be thrown; "getForObject" is nullable here.(àÇáİÿÿÿÿÿ8é¡Ñø«2
 g
 java:S2259&"JA "NullPointerException" could be thrown; "getForObject" is nullable here.(Şî¤8ê¡Ñø«2
 l
+java:S2259)"JA "NullPointerException" could be thrown; "getForObject" is nullable here.(àÇáİÿÿÿÿÿ8é¡Ñø«2
+l
 java:S2259'"JA "NullPointerException" could be thrown; "getForObject" is nullable here.(Ÿ„ãßúÿÿÿÿ8é¡Ñø«2
+l
+java:S2259("JA "NullPointerException" could be thrown; "getForObject" is nullable here.(¢”¦Ûøÿÿÿÿ8é¡Ñø«2
 j
 java:S3824c"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".(¥¹—«úÿÿÿÿ8ÅÀĞø«2
