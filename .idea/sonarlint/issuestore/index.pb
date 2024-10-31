@@ -429,3 +429,7 @@ XAnalytics/src/test/java/com/example/analytics/Service/PlatformStatisticsService
 SAnalytics/src/test/java/com/example/analytics/Service/PostAnalyticsServiceTest.java,e\8\e8ba13731e0ba25cb6ada5ce7c90dba34cf58ff2
 ƒ
 SAnalytics/src/test/java/com/example/analytics/Service/UserAnalyticsServiceTest.java,1\2\12c519ff845a2f77acb93d82fafa744ce527c3c7
+€
+Papi-gateway/src/test/java/com/example/apigateway/ApiGatewayApplicationTests.java,b\d\bd2a76bd89dffdfc18acc8310bda8d628b76dfcb
+{
+KAnalytics/src/test/java/com/example/analytics/AnalyticsApplicationTest.java,2\0\204b620279e1b80b101870802193fbd4802362ed

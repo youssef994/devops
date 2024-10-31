@@ -3,10 +3,10 @@
 g
 java:S2259O"JA "NullPointerException" could be thrown; "getForObject" is nullable here.(ïÐ±º8ÚþÊ‹”2
 g
-java:S2259J"JA "NullPointerException" could be thrown; "getForObject" is nullable here.(ïÐ±º8ÛþÊ‹”2
-g
-java:S2259T"JA "NullPointerException" could be thrown; "getForObject" is nullable here.(ïÐ±º8ÛþÊ‹”2
-g
 java:S2259@"JA "NullPointerException" could be thrown; "getForObject" is nullable here.(ïÐ±º8ÚþÊ‹”2
 g
 java:S2259E"JA "NullPointerException" could be thrown; "getForObject" is nullable here.(ïÐ±º8ÙþÊ‹”2
+g
+java:S2259J"JA "NullPointerException" could be thrown; "getForObject" is nullable here.(ïÐ±º8ÛþÊ‹”2
+g
+java:S2259T"JA "NullPointerException" could be thrown; "getForObject" is nullable here.(ïÐ±º8ÛþÊ‹”2
