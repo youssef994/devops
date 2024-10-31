@@ -35,11 +35,8 @@ public class NotificationWebSocketHandler extends TextWebSocketHandler {
             sessions.remove(userId);
         }
     }
-
-    public void sendNotificationToUser(Notification notification) throws IOException {
-        WebSocketSession session = sessions.get(notification.getUserId());
-        if (session != null && session.isOpen()) {
-            session.sendMessage(new TextMessage(notification.getContent()));
-        }
+    public Map<Long, WebSocketSession> getSessions() {
+        return sessions;
     }
+
 }
