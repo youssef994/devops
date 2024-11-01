@@ -15,7 +15,7 @@
     <description>Question-Anwser</description>
     <distributionManagement>
         <repository>
-            <id>deploymentRepo</id>
+            <id>nexus</id>
             <name>Nexus Repository</name>
             <url>http://192.168.33.10:9002/repository/maven-releases/</url>
         </repository>
