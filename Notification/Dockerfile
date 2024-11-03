@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copy the jar file from the target directory to the container
-COPY target/Notification-0.0.1-SNAPSHOT.jar notification-service.jar
+COPY target/Notification-0.0.1.jar notification-service.jar
 
 # Expose the port the app runs on
 EXPOSE 8085

@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copy the application JAR file into the container
-COPY target/api-gateway-0.0.1-SNAPSHOT.jar api-gateway.jar
+COPY target/api-gateway-0.0.1.jar api-gateway.jar
 
 # Expose the gateway port (8081)
 EXPOSE 8081
