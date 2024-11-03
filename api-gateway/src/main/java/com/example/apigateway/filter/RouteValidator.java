@@ -16,7 +16,9 @@ public class RouteValidator {
             "/api/auth/verify-email",
             "/api/auth/token",
             "/eureka/**",
-            "/assets/**"
+            "/assets/**",
+            "/actuator/prometheus",
+            "/"
     );
 
     private final PathMatcher pathMatcher = new AntPathMatcher();
